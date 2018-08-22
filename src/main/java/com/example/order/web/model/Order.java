@@ -22,11 +22,11 @@ public class Order implements Serializable {
 	@Column(name = "prdid")
 	private int prdid;
 
-	@Column(name = "cnt")
-	private int cnt = 1;
+	@Column(name = "quantity")
+	private int quantity = 1;
 
-	@Column(name = "phone")
-	private String phone = "";
+	@Column(name = "contact")
+	private String contact = "";
 
 	public int getId() {
 		return id;
@@ -44,19 +44,19 @@ public class Order implements Serializable {
 		this.prdid = (prdId == 0) ? 1 : prdId;
 	}
 
-	public int getCnt() {
-		return cnt;
+	public int getQuantity() {
+		return quantity;
 	}
 
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
-	public String getPhone() {
-		return phone;
+	public String getContact() {
+		return contact;
 	}
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setContact(String contact) {
+		this.contact = contact;
 	}
 }

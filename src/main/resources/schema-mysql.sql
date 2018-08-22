@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS product;
 DROP TABLE IF EXISTS category;
 */
+
 create table if not exists category (
 	id int not null auto_increment,
 	name varchar(255),
@@ -23,8 +24,8 @@ create table if not exists product (
 create table if not exists orders (
 	id int not null auto_increment,
 	prdid int,
-	cnt int DEFAULT 1,
-	phone varchar(255)  DEFAULT '04xxxxxxxx',
+	quantity int DEFAULT 1,
+	contact varchar(255)  DEFAULT '04xxxxxxxx',
 	primary key (id),
     foreign key (prdid)
         references product(id)

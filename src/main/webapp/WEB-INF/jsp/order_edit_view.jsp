@@ -22,8 +22,8 @@
 			<div class="form-group">
 			
 				<label>Product ID</label> <form:input path="prdid" cssClass="form-control" id="name" />
-				<label>Quantity</label> <form:input path="cnt" cssClass="form-control" id="name" />
-				<label>Contact Number</label> <form:input path="phone" cssClass="form-control" id="phone" />
+				<label>Quantity</label> <form:input path="quantity" cssClass="form-control" id="name" />
+				<label>Contact Number</label> <form:input path="contact" cssClass="form-control" id="phone" />
 			</div>
 			<button type="submit" class="btn btn-primary">Save</button>
 		</form:form>

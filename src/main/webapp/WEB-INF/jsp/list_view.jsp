@@ -84,8 +84,8 @@
 					<tr>
 						<td>${order.id }</td>
 						<td>${order.prdid }</td>
-						<td>${order.cnt }</td>
-						<td>${order.phone }</td>
+						<td>${order.quantity }</td>
+						<td>${order.contact }</td>
 						<td><spring:url value="/order/${order.id }" var="updateURL" /> <a class="btn btn-primary" href="${updateURL}" role="button">Update</a></td>
 						<td><spring:url value="/order/delete/${order.id }" var="deleteURL" /> <a class="btn btn-primary" href="${deleteURL}" role="button">Delete</a></td>
 					</tr>
